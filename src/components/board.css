@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* > * {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    
+}
+
+body{
+    --color-dark : #2f2f2f;
+    --color-light: #fde4c3;
+    --panelColor: #ffcb74;
+    --active : #06d6a0;
+}
+
+#site-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 80vh;
+    margin: 0 auto;
+  
+    border-radius: 12px;
+    
+    /* From https://css.glass */
+    box-shadow: 0 4px 30px #abd1c6;
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#site-main .board{
+    padding: 2em 0;
+    border-radius: .2em;
+}
+
+.text-dark{
+    color: var(--color-dark);
+}
+
+.text-light{
+    color: var(--color-light);
+}
+h1.title{
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    background-color: #f9f8fc;
+    border-radius: 10px;
+    
+    box-shadow: 0 4px 30px #8bd3dd;
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(109, 25, 25, 0.3);
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+ul > li .flex{
+    color:#113e21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-top: 1em;
+    text-align: left;
+    background-color: var(--active);
+    padding: .8em 0;
+    border-radius: 10px;
+    box-shadow: 1px 10px 20px #1f2b1a;
+}
+
+ul > li img{
+    border-radius: 50%;
+    width: 20%;
+}
+
+.upcoming{
+    margin-top: 2em;
+    background-color: #f9f8fc;
+    border-radius: 20px;
+    padding: .3em;
+    width: 50vh;
+    margin-left: 100px; 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(250, 111, 111, 0.3);
+}
